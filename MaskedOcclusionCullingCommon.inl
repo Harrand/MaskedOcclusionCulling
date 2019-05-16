@@ -71,7 +71,7 @@ template<typename T> FORCE_INLINE T min(const T &a, const T &b) { return a < b ?
 
 // Only gather statistics if enabled.
 #if ENABLE_STATS != 0
-	#define STATS_ADD(var, val)     _InterlockedExchangeAdd64( &var, val )
+	#define STATS_ADD(var, val)     do{var += val;}while(false)
 #else
 	#define STATS_ADD(var, val)
 #endif

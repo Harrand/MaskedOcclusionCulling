@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2017.3.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\FillrateTest.dir/objects.a
+C:\mingw64\bin\ar.exe cr CMakeFiles\FillrateTest.dir/objects.a @CMakeFiles\FillrateTest.dir\objects1.rsp
+C:\mingw64\bin\g++.exe -std=c++11 -m64 -g   -Wl,--whole-archive CMakeFiles\FillrateTest.dir/objects.a -Wl,--no-whole-archive  -o FillrateTest.exe -Wl,--out-implib,libFillrateTest.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\FillrateTest.dir\linklibs.rsp

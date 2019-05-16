@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libMaskedOcclusionCulling.a  CMakeFiles/MaskedOcclusionCulling.dir/MaskedOcclusionCullingAVX512.cpp.obj CMakeFiles/MaskedOcclusionCulling.dir/MaskedOcclusionCullingAVX2.cpp.obj CMakeFiles/MaskedOcclusionCulling.dir/MaskedOcclusionCulling.cpp.obj CMakeFiles/MaskedOcclusionCulling.dir/CullingThreadpool.cpp.obj
+C:\mingw64\bin\ranlib.exe libMaskedOcclusionCulling.a

@@ -17,6 +17,8 @@
 #include <string.h>
 #include <assert.h>
 #include <float.h>
+#define USE_D3D 0
+#define ENABLE_STATS 1
 #include "MaskedOcclusionCulling.h"
 #include "CompilerSpecific.inl"
 

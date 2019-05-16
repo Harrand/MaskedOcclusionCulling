@@ -118,7 +118,6 @@
 #if MOC_RECORDER_ENABLE
 
 #include <mutex>
-
 class FrameRecorder;
 
 #endif // #if MOC_RECORDER_ENABLE

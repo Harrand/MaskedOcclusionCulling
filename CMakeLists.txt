@@ -23,32 +23,6 @@ else()
 	set(CMAKE_CXX_FLAGS "-std=c++11 -m64")
 endif()
 
-if(MSVC)
-#
-# Setup compiler flags for AVX-512 files (MSVC)
-#
-
-if (USE_AVX512)
-	SET_SOURCE_FILES_PROPERTIES( ${MOC_AVX512_FILES} PROPERTIES COMPILE_FLAGS "-DUSE_AVX512=1 /arch:AVX2" )
-else()
-	SET_SOURCE_FILES_PROPERTIES( ${MOC_AVX512_FILES} PROPERTIES COMPILE_FLAGS "/arch:AVX2" )
-endif()
-
-#
-# Setup compiler flags for AVX2 files (MSVC)
-#
-SET_SOURCE_FILES_PROPERTIES( ${MOC_AVX2_FILES} PROPERTIES COMPILE_FLAGS "/arch:AVX2" )
-
-#
-# Setup compiler flags for SSE4.1 / SSE2 files (MSVC)
-#
-if(NOT "${CMAKE_GENERATOR}" MATCHES "(Win64|IA64)")
-	# SSE2 is always enabled on 64-bit architectures, specifying redundant flag produces a compiler warning
-	SET_SOURCE_FILES_PROPERTIES( ${MOC_SSE_FILES} PROPERTIES COMPILE_FLAGS "/arch:SSE2" )
-endif()
-
-else()
-
 #
 # Setup compiler flags for AVX-512 files
 #
@@ -67,8 +41,6 @@ SET_SOURCE_FILES_PROPERTIES( ${MOC_AVX2_FILES} PROPERTIES COMPILE_FLAGS "-mavx2 
 # Setup compiler flags for SSE4.1 / SSE2 files
 #
 SET_SOURCE_FILES_PROPERTIES( ${MOC_SSE_FILES} PROPERTIES COMPILE_FLAGS "-msse4.1" )
-
-endif()
 
 #
 # Create masked occlusion culling library

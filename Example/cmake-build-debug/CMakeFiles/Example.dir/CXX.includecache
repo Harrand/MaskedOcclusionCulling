@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Harrand/Programming/Projects/MaskedOcclusionCulling/Example/ExampleMain.cpp
+stdio.h
+-
+stdlib.h
+-
+float.h
+-
+algorithm
+-
+intrin.h
+-
+immintrin.h
+-
+../MaskedOcclusionCulling.h
+C:/Users/Harrand/Programming/Projects/MaskedOcclusionCulling/MaskedOcclusionCulling.h
+
+C:/Users/Harrand/Programming/Projects/MaskedOcclusionCulling/MaskedOcclusionCulling.h
+mutex
+-
+
